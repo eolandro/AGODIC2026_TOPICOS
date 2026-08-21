@@ -1,0 +1,55 @@
+###--
+'''
+Nombre: Infografia Malware y Crimeware
+Descripción: Realizar una infografía de los tipos de malware, el crimeware y su impacto económico.
+Notas: 
+= Idealmente hay que hablar sobre Crimeware y el Crimen Organizado.
+= La infografia debe ser entregada como Imagen o como PDF
+Elementos Clave: SEAES_CACEI: Compromiso con responsabilidad Social.
+'''
+##R001##
+##10##
+"""
+Descripción: Creatividad y Presentación.
+Restricciones: NA.
+"""
+##R002##
+##10##
+"""
+Descripción: Información y Contenido.
+Restricciones: NA.
+"""
+###--
+'''
+Nombre: Compilación de un Malware de juguete
+Descripción: Desarrollar un malware inofensivo con la guia del docente.
+Notas: El programa ejecutable debe ser sencillo y su daño deberia ser reversible.
+Elementos Clave: WebApi, Lazarus, Http.
+SEAES_CACEI: CD1-3,CD2-3, AE1,AE2, Vanguadia.
+'''
+##R003##
+##10##
+"""
+Descripción: Terminar el Malware y crear un Instalador malicioso. Este debera ser usado en un video engañoso de distribución.
+Restricciones: NA
+"""
+##R004##
+##10##
+"""
+Descripción: Un video de una infección persistente. Es decir que se vea que se ha ejecutado el malware y que este se ejecuta de manera automatica cada reinicio, sin que el usuario se de cuenta.
+Restricciones: NA
+"""
+###--
+'''
+Nombre: Laboratorio de analisis de malware.
+Descripción: Implementar un laboratorio de análisis de malware donde ejecute el malware previamente desarrollado.
+Notas: Se sugiere un sandbox Opensource
+Elementos Clave: CuckooBox, CapeV2
+SEAES_CACEI: CD1-3,CD2-3, AE1,AE2, Vanguadia.
+'''
+##R005##
+##60##
+"""
+Descripción: En un video se debe visualizar el archivo de análisis en sandbox.
+Restricciones: NA
+

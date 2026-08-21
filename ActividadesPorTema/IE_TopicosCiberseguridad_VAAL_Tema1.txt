@@ -1,0 +1,76 @@
+###--
+'''
+Nombre: Debugger
+Descripción: Dos ejercicios cuyo objetivo es adquirir las habilidades para usar un depurador, un editor hexadecimal y modificar ejecutables
+Notas: 
+= El primer ejercicio es sobre anatomia de los archivos binarios
+= El segundo es sobre modificacion de ejecutables con un depurador
+= En ambos casos el código fuente del software debe ser entregado
+= Bajo ninguna circunstancia de deben entregar ejecutables
+Elementos Clave: Magic numbers, Depuradores y ejecutables.
+SEAES_CACEI: CD1-3, AE1,Compromiso con responsabilidad Social.
+'''
+##R001##
+##10##
+"""
+Descripción: 
+En una imagen de una memoria extraible deberan extraer todas las fotografias y videos que se perdieron tras formatear la memoria, la memoria se coloco en una camara fotografica.
+= Se entregaran dos muestras de archivos un video y una foto
+= Deben analizar los magic numbers y los finales de archivo para intentar recuperar la información
+Restricciones: Deben programar su propia herramienta de detección y extracción.
+"""
+##R002##
+##20##
+"""
+Descripción: 
+Una aplicación crítica antigua (Legacy) pide un "Serial Key" para funcionar. La empresa ya no existe y no hay soporte, pero la producción depende de este software. Se necesita un parche (crack) ético para seguir operando.
+Usando un depurador modifica un salto para pasar la validación. 
+Desarrolla un programa en python que cree el ejecutable parchado a partir del original.
+
+Pasos a Seguir
+- Abrir el binario en el depurador (Debugger).
+- Rastrear las cadenas de texto (Strings) para encontrar el mensaje "Error" o "Acceso".
+- Identificar la instrucción de comparación (CMP) y el salto condicional (JE / JNE) que decide si la clave es correcta.
+- Guarda el ejecutable modificado.
+- Aplica software de diferencias de archivos en el ejecutable original y en el modificado.
+- Identifica el cambio y realizar un programa en python que lea el ejecutable original y aplique los cambios pertinentes.
+
+Restricciones: NA.
+"""
+###--
+'''
+Nombre: Reconstrucción del codigo fuente (Ghidra)
+Descripción: Usando una herramienta deben generar el codigo fuente de un ejecutable, luego debe volverse a compilar y se compara el resultado con el original.
+Notas: 
+= El programa ejecutable debe ser sencillo, debe generar algo como una imagen o un documento json, se sugiere el uso del compilador de TCC pues es sencillo de reconstruir con Ghidra.
+= En ambos casos el código fuente del software debe ser entregado
+= Bajo ninguna circunstancia de deben entregar ejecutables
+Elementos Clave: Ghidra, TCC, Lenguaje C.
+SEAES_CACEI: CD1-3, AE1,Compromiso con responsabilidad Social.
+'''
+##R003##
+##20##
+"""
+Descripción: Documentar el proceso de como obtuvieron el codigo fuente.
+Restricciones: NA
+"""
+##R004##
+##20##
+"""
+Descripción: Compilar y comparar el nuevo ejecutable con su original.
+Restricciones: NA
+"""
+###--
+'''
+Nombre: Parchar un ejecutable.
+Descripción: A partir de un ejecutable con un validación en linea proporcionado por el docente, aplicar los conocimientos previos adquiridos para saltar la validación.
+Notas: Se sugiere el uso de Lazarus y python para el servicio de validación
+Elementos Clave: WebApi, Lazarus, Http.
+SEAES_CACEI: CD1-3, AE1,Compromiso con responsabilidad Social.
+'''
+##R005##
+##30##
+"""
+Descripción: El ejecutable debe funcionar no importa que usuario y contraseña use.
+Restricciones: NA
+"""

@@ -1,0 +1,54 @@
+###--
+'''
+Nombre: Instalacion de un servidor para una webapi
+Descripción: 
+= Se debe instalar un servidor desde 0 para sustentar la operación de una webapi.
+Notas: Aunque puede ser en cualquier lenguaje de programación, considerar el lenguaje que uso el docente de programación web.
+Elementos Clave: PHP, PYTHON, Webapi.
+SEAES_CACEI: CD1-3,CD2-3, AE1,AE2, Vanguadia.
+'''
+##R001##
+##30##
+"""
+Descripción: 
+= Deben mostar el servidor funcionando con la api. 
+= Debe sobrevivir a que se desconecten de ssh
+Restricciones: NA.
+"""
+###--
+'''
+Nombre: Instalación de Certificado de seguridad
+Descripción: Se debe instalar un certificado autofirmado o gratuito
+Notas: NA.
+Elementos Clave: Mkcert.
+SEAES_CACEI: CD1-3,CD7-3, AE1, AE7, Vanguadia.
+'''
+##R002##
+##30##
+"""
+Descripción: Se verifica que navegador identifique que es un sitio seguro
+Restricciones: NA.
+"""
+###--
+'''
+Nombre: Parche e instalacion de webapi.
+Descripción: Se debe instalar la webapi en el servidor y posteriormente parchar todas la vulnerabilidades.
+Notas: 
+= Se sugiere el uso de un repositorio de git o hg para llevar el control y documentación
+= Cuando se realiza un commit este permite colocar un descripción larga o colocar dicha descripción desde un archivo
+Elementos Clave: OWASP
+SEAES_CACEI: CD1-3,CD2-3, AE1,AE2, Vanguadia.
+'''
+##R003##
+##9##
+"""
+Descripción: Realizar un fork al repositorio de la web api, para tener un repositorio propio.
+Restricciones: NA
+"""
+##R004##
+##31##
+"""
+Descripción: Se deben parchar y documentar 5 vulnerabilidades de la web api con commits en el repositorio propio
+Restricciones: NA
+"""
+

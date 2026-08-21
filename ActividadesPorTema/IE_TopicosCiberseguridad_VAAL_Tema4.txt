@@ -1,0 +1,30 @@
+###--
+'''
+Nombre: Hardening de windows
+Descripción: Asegurar servicios y accesos basicos a un servidor windows.
+Notas: Pueden ser servicios como Dominio, Web o Base de datos.
+Elementos Clave: Remote Desktop, MSSQL, Cuentas de usuario, firewall.
+SEAES_CACEI: CD1-3,CD7-3, AE1,AE7, Vanguadia.
+'''
+##R001##
+##50##
+"""
+Descripción: Reporte de Pruebas de acceso remoto a diversos servicios.
+Restricciones: NA.
+"""
+###--
+'''
+Nombre: Hardening de Gnu/Linux
+Descripción: Asegurar servicios y accesos básicos a un servidor GNU/Linux.
+Notas: Pueden ser servicios como Dominio, Web o Base de datos.
+Elementos Clave: SSH, MariaDB, PosgreSQL, Cuentas de usuario, firewall.
+SEAES_CACEI: CD1-3,CD7-3, AE1,AE7, Vanguadia.
+'''
+"""
+##R002##
+##50##
+"""
+Descripción: Reporte de Pruebas de acceso remoto a diversos servicios.
+Restricciones: NA.
+"""
+
