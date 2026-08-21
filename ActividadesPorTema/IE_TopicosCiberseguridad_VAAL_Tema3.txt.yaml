@@ -1,0 +1,33 @@
+- Actividad: "Nombre: Instalacion de un servidor para una webapi\nDescripción: \n\
+    = Se debe instalar un servidor desde 0 para sustentar la operación de una webapi.\n\
+    Notas: Aunque puede ser en cualquier lenguaje de programación, considerar el lenguaje
+    que uso el docente de programación web.\nElementos Clave: PHP, PYTHON, Webapi.\n\
+    SEAES_CACEI: CD1-3,CD2-3, AE1,AE2, Vanguadia."
+  Reactivos:
+  - ID: R001
+    Ponderacion: 30
+    Reactivo: "Descripción: \n= Deben mostar el servidor funcionando con la api. \n\
+      = Debe sobrevivir a que se desconecten de ssh\nRestricciones: NA."
+- Actividad: "Nombre: Instalación de Certificado de seguridad\nDescripción: Se debe
+    instalar un certificado autofirmado o gratuito\nNotas: NA.\nElementos Clave: Mkcert.\n\
+    SEAES_CACEI: CD1-3,CD7-3, AE1, AE7, Vanguadia."
+  Reactivos:
+  - ID: R002
+    Ponderacion: 30
+    Reactivo: "Descripción: Se verifica que navegador identifique que es un sitio
+      seguro\nRestricciones: NA."
+- Actividad: "Nombre: Parche e instalacion de webapi.\nDescripción: Se debe instalar
+    la webapi en el servidor y posteriormente parchar todas la vulnerabilidades.\n\
+    Notas: \n= Se sugiere el uso de un repositorio de git o hg para llevar el control
+    y documentación\n= Cuando se realiza un commit este permite colocar un descripción
+    larga o colocar dicha descripción desde un archivo\nElementos Clave: OWASP\nSEAES_CACEI:
+    CD1-3,CD2-3, AE1,AE2, Vanguadia."
+  Reactivos:
+  - ID: R003
+    Ponderacion: 9
+    Reactivo: "Descripción: Realizar un fork al repositorio de la web api, para tener
+      un repositorio propio.\nRestricciones: NA"
+  - ID: R004
+    Ponderacion: 31
+    Reactivo: "Descripción: Se deben parchar y documentar 5 vulnerabilidades de la
+      web api con commits en el repositorio propio\nRestricciones: NA"

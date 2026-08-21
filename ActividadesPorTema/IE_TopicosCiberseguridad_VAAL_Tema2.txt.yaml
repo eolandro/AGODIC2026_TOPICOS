@@ -1,0 +1,35 @@
+- Actividad: "Nombre: Infografia Malware y Crimeware\nDescripción: Realizar una infografía
+    de los tipos de malware, el crimeware y su impacto económico.\nNotas: \n= Idealmente
+    hay que hablar sobre Crimeware y el Crimen Organizado.\n= La infografia debe ser
+    entregada como Imagen o como PDF\nElementos Clave: SEAES_CACEI: Compromiso con
+    responsabilidad Social."
+  Reactivos:
+  - ID: R001
+    Ponderacion: 10
+    Reactivo: "Descripción: Creatividad y Presentación.\nRestricciones: NA."
+  - ID: R002
+    Ponderacion: 10
+    Reactivo: "Descripción: Información y Contenido.\nRestricciones: NA."
+- Actividad: "Nombre: Compilación de un Malware de juguete\nDescripción: Desarrollar
+    un malware inofensivo con la guia del docente.\nNotas: El programa ejecutable
+    debe ser sencillo y su daño deberia ser reversible.\nElementos Clave: WebApi,
+    Lazarus, Http.\nSEAES_CACEI: CD1-3,CD2-3, AE1,AE2, Vanguadia."
+  Reactivos:
+  - ID: R003
+    Ponderacion: 10
+    Reactivo: "Descripción: Terminar el Malware y crear un Instalador malicioso. Este
+      debera ser usado en un video engañoso de distribución.\nRestricciones: NA"
+  - ID: R004
+    Ponderacion: 10
+    Reactivo: "Descripción: Un video de una infección persistente. Es decir que se
+      vea que se ha ejecutado el malware y que este se ejecuta de manera automatica
+      cada reinicio, sin que el usuario se de cuenta.\nRestricciones: NA"
+- Actividad: "Nombre: Laboratorio de analisis de malware.\nDescripción: Implementar
+    un laboratorio de análisis de malware donde ejecute el malware previamente desarrollado.\n\
+    Notas: Se sugiere un sandbox Opensource\nElementos Clave: CuckooBox, CapeV2\n\
+    SEAES_CACEI: CD1-3,CD2-3, AE1,AE2, Vanguadia."
+  Reactivos:
+  - ID: R005
+    Ponderacion: 60
+    Reactivo: "Descripción: En un video se debe visualizar el archivo de análisis
+      en sandbox.\nRestricciones: NA"
