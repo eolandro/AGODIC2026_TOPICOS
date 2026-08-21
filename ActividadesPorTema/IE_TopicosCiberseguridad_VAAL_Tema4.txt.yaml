@@ -10,7 +10,7 @@
 - Actividad: "Nombre: Hardening de Gnu/Linux\nDescripción: Asegurar servicios y accesos
     básicos a un servidor GNU/Linux.\nNotas: Pueden ser servicios como Dominio, Web
     o Base de datos.\nElementos Clave: SSH, MariaDB, PosgreSQL, Cuentas de usuario,
-    firewall.\nSEAES_CACEI: CD1-3,CD7-3, AE1,AE7, Vanguadia.\n\n\"\"\""
+    firewall.\nSEAES_CACEI: CD1-3,CD7-3, AE1,AE7, Vanguadia."
   Reactivos:
   - ID: R002
     Ponderacion: 50

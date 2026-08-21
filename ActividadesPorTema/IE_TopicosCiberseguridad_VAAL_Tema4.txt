@@ -20,7 +20,6 @@ Notas: Pueden ser servicios como Dominio, Web o Base de datos.
 Elementos Clave: SSH, MariaDB, PosgreSQL, Cuentas de usuario, firewall.
 SEAES_CACEI: CD1-3,CD7-3, AE1,AE7, Vanguadia.
 '''
-"""
 ##R002##
 ##50##
 """
