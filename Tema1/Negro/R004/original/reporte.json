@@ -1,0 +1,18 @@
+{
+  "estacion": "Central",
+  "lecturas": [
+    { "dia": "Lunes", "temperatura": 22.5 },
+    { "dia": "Martes", "temperatura": 25.0 },
+    { "dia": "Miercoles", "temperatura": 31.2 },
+    { "dia": "Jueves", "temperatura": 28.7 },
+    { "dia": "Viernes", "temperatura": 33.1 },
+    { "dia": "Sabado", "temperatura": 19.8 },
+    { "dia": "Domingo", "temperatura": 27.4 }
+  ],
+  "estadisticas": {
+    "minimo": 19.8,
+    "maximo": 33.1,
+    "promedio": 26.81,
+    "dias_alerta_calor": 2
+  }
+}
