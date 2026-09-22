@@ -1,0 +1,11 @@
+##R001##
+##10##
+"""
+Descripción: 
+En una imagen de una memoria extraible deberan extraer todas las fotografias y videos que se perdieron tras formatear la memoria, la memoria se coloco en una camara fotografica.
+= Se entregaran dos muestras de archivos un video y una foto
+= Deben analizar los magic numbers y los finales de archivo para intentar recuperar la información
+Restricciones: Deben programar su propia herramienta de detección y extracción.
+
+VIDEO
+https://youtu.be/tFrCjbi9yYE?si=eFRtEUtMyRkGgux2

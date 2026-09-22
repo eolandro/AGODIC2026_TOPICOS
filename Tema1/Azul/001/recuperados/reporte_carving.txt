@@ -1,0 +1,123 @@
+REPORTE DE FILE CARVING
+
+Tipo: JPEG
+Archivo: disk_foto_001.jpg
+Inicio: 6584289 (0x6477e1)
+Final: 6615244 (0x64f0cc)
+Tamaño: 30956 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_002.jpg
+Inicio: 10680320 (0xa2f800)
+Final: 10698223 (0xa33def)
+Tamaño: 17904 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_003.jpg
+Inicio: 10685952 (0xa30e00)
+Final: 10698223 (0xa33def)
+Tamaño: 12272 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_004.jpg
+Inicio: 10686208 (0xa30f00)
+Final: 10698223 (0xa33def)
+Tamaño: 12016 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_005.jpg
+Inicio: 13044736 (0xc70c00)
+Final: 13060514 (0xc749a2)
+Tamaño: 15779 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_006.jpg
+Inicio: 13050368 (0xc72200)
+Final: 13060514 (0xc749a2)
+Tamaño: 10147 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_007.jpg
+Inicio: 15065600 (0xe5e200)
+Final: 15084316 (0xe62b1c)
+Tamaño: 18717 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_008.jpg
+Inicio: 15071232 (0xe5f800)
+Final: 15084316 (0xe62b1c)
+Tamaño: 13085 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_009.jpg
+Inicio: 19532288 (0x12a0a00)
+Final: 19551737 (0x12a55f9)
+Tamaño: 19450 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_010.jpg
+Inicio: 19538176 (0x12a2100)
+Final: 19551737 (0x12a55f9)
+Tamaño: 13562 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_011.jpg
+Inicio: 22825984 (0x15c4c00)
+Final: 22847639 (0x15ca097)
+Tamaño: 21656 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_012.jpg
+Inicio: 22831616 (0x15c6200)
+Final: 22847639 (0x15ca097)
+Tamaño: 16024 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_013.jpg
+Inicio: 25386496 (0x1835e00)
+Final: 25410543 (0x183bbef)
+Tamaño: 24048 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_014.jpg
+Inicio: 25392128 (0x1837400)
+Final: 25410543 (0x183bbef)
+Tamaño: 18416 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_015.jpg
+Inicio: 31047081 (0x1d9bda9)
+Final: 31063963 (0x1d9ff9b)
+Tamaño: 16883 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_016.jpg
+Inicio: 36946815 (0x233c37f)
+Final: 36953662 (0x233de3e)
+Tamaño: 6848 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_017.jpg
+Inicio: 38284200 (0x2482ba8)
+Final: 38332517 (0x248e865)
+Tamaño: 48318 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_018.jpg
+Inicio: 45456123 (0x2b59afb)
+Final: 45471127 (0x2b5d597)
+Tamaño: 15005 bytes
+
+Tipo: JPEG
+Archivo: disk_foto_019.jpg
+Inicio: 54553915 (0x3406d3b)
+Final: 54560172 (0x34085ac)
+Tamaño: 6258 bytes
+
+Tipo: MP4
+Archivo: disk_video_001.mp4
+Inicio: 28872192 (0x1b88e00)
+Final: 56494407 (0x35e0947)
+Tamaño: 27622216 bytes
+Cajas MP4: ftyp, moov, free, mdat
+
