@@ -181,7 +181,7 @@ def main():
 
         nombre = os.path.join(
             carpeta,
-            f"archivo_{recuperados:03d}.{tipo}"
+            f"recuperado_{recuperados}.{tipo}"
         )
 
         with open(nombre, "wb") as salida:
