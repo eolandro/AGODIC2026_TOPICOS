@@ -1,0 +1,8 @@
+Sikorski, M., & Honig, A. (2012). Practical malware analysis: The hands-on guide to dissecting malicious software. No Starch Press.
+Sood, A. K., & Enbody, R. J. (2013). Crimeware-as-a-service—A survey of commoditized crimeware in the underground market. International Journal of Critical Infrastructure Protection
+Jakobsson, M., & Ramzan, Z. (2008). Crimeware: understanding new attacks and defenses. Addison-Wesley Professional.
+Morgan, S. (2020). Cybercrime to cost the world $10.5 trillion annually by 2025. Cybersecurity Ventures / Cybercrime Magazine. https://cybersecurityventures.com/hackerpocalypse-cybercrime-report-2016/
+colaboradores de Wikipedia. (2024, 6 noviembre). Crimeware. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Crimeware
+colaboradores de Wikipedia. (2026b, septiembre 25). Malware. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Malware
+IBM Cost of a Data Breach Report 2024. Costo promedio por brecha, tiempo de detección https://www.ibm.com/reports/data-breach
+Chainalysis Crypto Crime Report 2024. Pagos de ransomware en criptomonedas https://www.chainalysis.com/blog/2024-crypto-crime-report-introduction
