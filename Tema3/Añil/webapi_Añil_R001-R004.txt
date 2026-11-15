@@ -1,0 +1,15 @@
+DESCRIPCIÓN DE EVIDENCIAS EN VIDEO
+Tópicos de Ciberseguridad — Web API
+https://anil-webapi.duckdns.org/
+
+VIDEO 1 — R001 y R002
+Se muestra el servidor Debian ejecutando la Web API, la comprobación de sus respuestas y el uso de GNU Screen para mantenerla activa después de cerrar la conexión SSH. También se presenta el acceso por HTTPS desde Google Chrome y la revisión de la seguridad del certificado digital (inicio de R002).
+https://drive.google.com/file/d/12R6-YHMg0qeBw-7wIgtayv0GgCV27rP8/view?usp=sharing
+
+
+VIDEO 2 — Continuación de R002, R003 y R004
+Se continúa la verificación del certificado Let's Encrypt desde la terminal Debian, incluyendo su vigencia, una simulación de renovación y la consulta de la tarea programada. Después se muestra el repositorio propio en GitHub, la rama seguridad-publica y su historial de commits (R003). Por último, se presenta la sección de R004 dedicada a la documentación y corrección de vulnerabilidades de la Web API.
+https://drive.google.com/file/d/1UbDdFLhh1jB3C7OCiu66F5MeeqoNTMMW/view?usp=sharing
+
+repositorio en GitHub
+https://github.com/AngelSantosSinecio4854/insecure-webapi/tree/seguridad-publica
