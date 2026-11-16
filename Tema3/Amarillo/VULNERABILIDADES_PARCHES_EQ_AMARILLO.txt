@@ -1,0 +1,130 @@
+Equipo Amarillo
+DOCUMENTACION DE PARCHES Y VULNERABILIDADES:
+
+1. Inyección SQL en el Registro (/Registro)
+Vulnerabilidad: El código original concatenaba directamente las variables en la consulta SQL, lo que permitía a un atacante manipular la base de datos.
+Solución: Se reemplazó la consulta por una parametrizada usando placeholders (%s).
+
+Antes:
+
+cursor.execute(f'insert into Usuario values(null,"{request.json["uname"]}","{request.json["email"]}",md5("{request.json["password"]}"))');
+
+Después:
+
+cursor.execute(
+    'INSERT INTO Usuario VALUES(null, %s, %s, MD5(%s))',
+    (request.json["uname"], request.json["email"], request.json["password"])
+)
+
+
+
+2. Inyección SQL y fuga de datos en el Login (/Login)
+Vulnerabilidad: Misma inyección SQL que en el registro, además de un print() que filtraba la contraseña en los logs del servidor.
+Solución: Se eliminó el print y se implementó una consulta parametrizada.
+
+Código corregido:
+
+cursor.execute(
+    'SELECT id FROM Usuario WHERE uname = %s AND password = MD5(%s)',
+    (request.json["uname"], request.json["password"])
+)
+
+
+
+3. Generación de Token Insegura (getToken)
+Vulnerabilidad: Se usaba la librería random (predecible) y funciones hash simples para generar los tokens de sesión.
+Solución: Se importó la librería secrets y se reemplazó toda la función por una generación criptográficamente segura.
+
+Código corregido:
+
+import secrets
+def getToken():
+    return secrets.token_urlsafe(32)
+
+
+4. BOLA / IDOR en la descarga de imágenes (/Descargar)
+Vulnerabilidad: Cualquier usuario autenticado podía descargar imágenes de otros alterando el ID en la petición. Además, la consulta SQL era vulnerable a inyección.
+Solución: Se parametrizó la consulta y se añadió la validación del dueño de la imagen (id_Usuario). También se removió un print que revelaba rutas internas.
+
+Código corregido:
+
+cursor.execute('SELECT name, ruta FROM Imagen WHERE id = %s AND id_Usuario = %s', (idImagen, id_Usuario))
+
+
+
+5. Inyección SQL en la subida de imágenes (/Imagen)
+Vulnerabilidad: El token y las variables del JSON se concatenaban directamente en las consultas SQL para insertar y actualizar la tabla Imagen.
+Solución: Se parametrizaron las consultas y se agregó validación para asegurar que el token exista.
+
+Código corregido:
+
+cursor.execute('INSERT INTO Imagen VALUES(null, %s, %s, %s)', (request.json["name"], "img/", id_Usuario))
+# ...
+cursor.execute('UPDATE Imagen SET ruta = %s WHERE id = %s', (f"img/{idImagen}.{request.json['ext']}", idImagen))
+
+
+
+
+6. Falta de validación de datos de entrada (/Registro)
+Vulnerabilidad: La API permitía registrar usuarios con campos vacíos y correos electrónicos con formato inválido.
+Solución: Se agregaron validaciones con .strip() para evitar espacios vacíos y una expresión regular (regex) para verificar el correo.
+
+Código agregado:
+
+if not uname or not email or not password:
+    return {"R":-1}
+import re
+if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+    return {"R":-2}
+
+
+
+7. Fuga de información en manejo de errores
+Vulnerabilidad: Los bloques except imprimían el error real en la consola con print(e), exponiendo detalles de la base de datos.
+Solución: Se importó la librería logging, se configuró un archivo de log y se reemplazaron todos los print.
+
+Código corregido:
+
+import logging
+logging.basicConfig(filename='errores_api.log', level=logging.ERROR)
+# En los except:
+logging.error(f"Error interno: {e}")
+
+
+
+8. Subida de archivos sin restricción (/Imagen)
+Vulnerabilidad: Se podía subir cualquier tipo de archivo (como scripts .php o .py) que podría comprometer el servidor.
+Solución: Se implementó una "lista blanca" (whitelist) que solo permite extensiones de imagen válidas.
+
+Código agregado:
+
+EXT_PERMITIDAS = {'png', 'jpg', 'jpeg', 'gif'}
+ext = str(request.json['ext']).lower().strip('.')
+if ext not in EXT_PERMITIDAS:
+    return {"R":-2}
+
+
+
+9. Ataque de Denegación de Servicio (DoS) por tamaño de archivo
+Vulnerabilidad: No había un límite en el tamaño del Base64 enviado, lo que permitía tumbar el servidor enviando archivos masivos.
+Solución: Se agregó una validación del tamaño de la cadena antes de decodificar y guardar el archivo (límite de ~5MB).
+
+Código agregado:
+
+if len(request.json['data']) > 7_000_000:
+    db.close()
+    return {"R":-4}
+
+
+10. Uso de cifrado débil para contraseñas (MD5)
+Vulnerabilidad: Las contraseñas se guardaban con MD5, un algoritmo obsoleto y fácil de vulnerar con tablas arcoíris.
+Solución: Se importó bcrypt y se actualizaron los endpoints para que generen y comparen hashes seguros con salt.
+
+Código corregido en /Registro y /Login:
+
+import bcrypt
+# Para guardar:
+pw_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+# Para verificar:
+if not row or not bcrypt.checkpw(request.json["password"].encode(), row[1].encode()):
+    return {"R":-3}
