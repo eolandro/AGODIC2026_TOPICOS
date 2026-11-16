@@ -1,0 +1,10 @@
+# Actividades  de la Unidad 3 del equipo Magenta
+
+# Link video de comprobacion y funcionamiento de la API
+https://youtu.be/Fw0H73aFI9Y
+
+# Link a la API
+https://api-magenta.danielmtzh.com/
+
+# Link al repositorio del fork
+https://github.com/DMau1420/insecure-webapi.git
